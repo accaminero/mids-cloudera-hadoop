@@ -9,6 +9,7 @@ services:
       - "8887:8888"   # Hue server
       - "8889:8889"   # jupyter
       - "10020:10020" # mapreduce job history server
+      - "10000:10000" # hive
       - "8022:22"     # ssh
       - "7180:7180"   # Cloudera Manager
       - "11000:11000" # Oozie
@@ -23,4 +24,4 @@ services:
     tty: true
     stdin_open: true
     volumes: 
-      - <your local shared directory here>:/media/notebooks
+      - <CARPETA LOCAL>:/media/notebooks

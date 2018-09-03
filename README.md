@@ -1,4 +1,6 @@
-# MIDS W261 - Cloudera Hadoop on Docker
+# Sistemas de bases de datos -- Universidad Nacional de Educación a Distancia (UNED)
+
+Cloudera Hadoop on Docker
 
 ---
 This docker image consists of the Cloudera QuickStart image extended with miniconda, important python packages and Jupyter notebook configured with pyspark.
@@ -42,6 +44,7 @@ docker run --hostname=quickstart.cloudera \
            -p 7180:7180 \
            -p 8088:8088 \
            -p 8042:8042 \
+           -p 10000:10000 \
            -p 10020:10020 \
            -p 19888:19888 \
            -v <host-path-to-mount-inside-container>:/media/notebooks \
