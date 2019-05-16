@@ -63,7 +63,7 @@ ENV IPYTHON_OPTS "notebook --port 8889 --notebook-dir='/media/notebooks' --ip='*
 RUN cd /root && \
 	wget --quiet https://raw.githubusercontent.com/ankittharwani/mids-cloudera-hadoop/master/startup.sh && \
 	chmod 755 /root/startup.sh && \
-	wget --quiet https://raw.githubusercontent.com/ankittharwani/mids-cloudera-hadoop/master/docker-quickstart && \
+	wget --quiet https://raw.githubusercontent.com/accaminero/mids-cloudera-hadoop/master/docker-quickstart && \
 	chmod 755 /root/docker-quickstart && \
 	cat docker-quickstart > /usr/bin/docker-quickstart
 
