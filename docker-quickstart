@@ -28,7 +28,9 @@ else
         hadoop-yarn-resourcemanager \
         hive-metastore \
         hive-server2 \
-        spark-history-server"
+        spark-history-server \
+        hbase master \ 
+        hbase regionserver"
 fi
 
 for daemon in ${DAEMONS}; do
